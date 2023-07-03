@@ -11,7 +11,7 @@ The app is deployed on Streamlit Community Cloud and is linked to this GitHub re
 - Displays a bar chart of average salaries based on job categories
 - Allows exploration of salaries for different years, countries, and experience levels through interactive filters
 
-  ![Screenshot 2023-07-03 164243](https://github.com/NickTimosh/data_science_salaries_app/assets/116592259/62fa4918-c3d2-4328-845e-18d3725e5543)
+![Screenshot 2023-07-03 164243](https://github.com/NickTimosh/data_science_salaries_app/assets/116592259/62fa4918-c3d2-4328-845e-18d3725e5543)
 
 ## Data Source
 
