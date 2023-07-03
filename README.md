@@ -1,6 +1,6 @@
 # 💵 Data Science Salaries Dashboard
 
-[![Streamlit App](https://ds-salaries.streamlit.app/)
+[Streamlit App](https://ds-salaries.streamlit.app/)
 
 This repository contains a web app built with Python and Streamlit that provides insights into data science salaries. 
 The app is deployed on Streamlit Community Cloud and is linked to this GitHub repository for seamless updates.
