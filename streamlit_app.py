@@ -51,11 +51,6 @@ df['employment_type'] = df['employment_type'].str.replace('CT', 'Contract')
 df['employment_type'] = df['employment_type'].str.replace('FL', 'Freelancer')
 df['employment_type'] = df['employment_type'].str.replace('PT', 'Part Time')
 
-# Update [company_size]
-df['company_size'] = df['company_size'].str.replace('L', "Large size")
-df['company_size'] = df['company_size'].str.replace('M', "Mid size")
-df['company_size'] = df['company_size'].str.replace('S', "Small size")
-
 # ---- SIDEBAR ----
 
 st.sidebar.header('Filters')
