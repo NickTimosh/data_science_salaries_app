@@ -138,7 +138,7 @@ chart = chart + text
 
 chart = chart.properties(
     width=600,
-    height=400,
+    height=350,
     view={"stroke": None}  # Remove the padding around the chart
 )
 
