@@ -62,8 +62,7 @@ year = st.sidebar.radio(
 
 location = st.sidebar.selectbox(
     'Country',
-    options=df['company_location'].unique(),
-    default='US'
+    options=df['company_location'].unique()
 )
 
 comp_size = st.sidebar.multiselect(
@@ -99,10 +98,12 @@ st.markdown('##')
 cnt_jobs = df_selection['salary_in_usd'].count()
 avg_salary_kpi = int(df_selection['salary_in_usd'].mean())
 
-col_1, col_2 = st.columns(2)
+col_1, col_2, col_3 = st.columns(3)
 with col_1:
-    st.metric(label = '👷‍♂️ Jobs in Dataset:', value = f'{cnt_jobs:,}')
+    st.metric(label = '👷‍♂️ Country:', value = location)
 with col_2:
+    st.metric(label = '👷‍♂️ Jobs in Dataset:', value = f'{cnt_jobs:,}')
+with col_3:
     st.metric(label = '💵 Average Salary:', value = f'US $ {avg_salary_kpi:,}')
 
 st.markdown('---')
