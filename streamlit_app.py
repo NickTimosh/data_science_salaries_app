@@ -9,7 +9,12 @@ st.set_page_config(page_title='DS Salaries',
 )
 
 # ---- Read CSV ----
-df = pd.read_csv('ds_salaries.csv')
+@st.cache_resource
+def get_data():
+    df = pd.read_csv('ds_salaries.csv')
+    return df
+
+df = get_data()
 
 # Add [job_category]
 job_categories = ['Data Science', 'Data Analytics', 'Data Engineering', 'Machine Learning', 'Managerial', 'Research Scientist']
@@ -100,7 +105,7 @@ avg_salary_kpi = int(df_selection['salary_in_usd'].mean())
 
 col_1, col_2, col_3 = st.columns(3)
 with col_1:
-    st.metric(label = '👷‍♂️ Country:', value = location)
+    st.metric(label = '🌍 Country:', value = location)
 with col_2:
     st.metric(label = '👷‍♂️ Jobs in Dataset:', value = f'{cnt_jobs:,}')
 with col_3:
