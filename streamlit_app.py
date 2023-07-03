@@ -10,8 +10,11 @@ st.set_page_config(page_title='DS Salaries',
 
 # ---- Read CSV ----
 
-df = pd.read_csv('ds_salaries.csv')
+@st.cache
+def get_data():
+  df = pd.read_csv('ds_salaries.csv')
 
+df = get_data()
 # Add [job_category]
 job_categories = ['Data Science', 'Data Analytics', 'Data Engineering', 'Machine Learning', 'Managerial', 'Research Scientist']
 
