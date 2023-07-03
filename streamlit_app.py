@@ -65,12 +65,6 @@ location = st.sidebar.selectbox(
     options=df['company_location'].unique()
 )
 
-comp_size = st.sidebar.multiselect(
-    'Company Size:',
-    options=df['company_size'].unique(),
-    default=df['company_size'].unique()
-)
-
 ex_level = st.sidebar.multiselect(
     'Experience Level:',
     options=df['experience_level'].unique(),
@@ -85,7 +79,7 @@ emp_type = st.sidebar.multiselect(
 
 
 df_selection = df.query(
-    'work_year == @year & experience_level == @ex_level & employment_type == @emp_type & company_size == @comp_size & company_location == @location'
+    'work_year == @year & experience_level == @ex_level & employment_type == @emp_type & company_location == @location'
 )
 
 # ---- Dashboard Title ----
