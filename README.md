@@ -1,4 +1,4 @@
-# 💵 Data Science Salaries Dashboard
+# 🧨 Data Science Salaries Dashboard
 
 [Streamlit Web App](https://ds-salaries.streamlit.app/)
 
