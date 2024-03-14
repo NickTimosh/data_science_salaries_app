@@ -19,4 +19,4 @@ To see the datasource, simply visit the [Kaggle Data Science 2023 Dataset](https
 
 ## Contributing
 
-Contributions to the project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+Contributions to the project are welcome!!! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request
